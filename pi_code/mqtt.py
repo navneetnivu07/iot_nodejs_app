@@ -15,6 +15,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
+client.username_pw_set('ant', 'antWARE#5747')
 client.connect("192.168.1.16", 1883, 60)
 
 # Blocking call that processes network traffic, dispatches callbacks and

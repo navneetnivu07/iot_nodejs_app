@@ -55,7 +55,7 @@ def handle(pin):
 	print node_data['pin']
 	pub_msg = {"action":GPIO.input(pin),"pin":node_data['pin']}
 	print(json.dumps(pub_msg))
-	client.publish(node_data['topic'], json.dumps(pub_msg))
+	client.publish(node_data['topic'], json.dumps(pub_msg), 1)
 
 GPIO.add_event_detect(BTN_G, GPIO.BOTH, handle)
 GPIO.add_event_detect(BTN_R, GPIO.BOTH, handle)

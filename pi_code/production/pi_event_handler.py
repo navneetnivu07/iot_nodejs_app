@@ -12,28 +12,26 @@ import requests
 # Button Configurations
 GPIO.setmode(GPIO.BOARD)
 
-s1 = 07 # Green IO
-s2 = 11 # Green IO
-s3 = 12 # Green IO
-s4 = 13 # Green IO
-s5 = 15 # Green IO
-s6 = 16 # Green IO
-s7 = 18 # Green IO
-s8 = 19 # Pink IO
-s9 = 21 # Pink IO
-s10 = 22 # Green IO
-s11 = 13 # Pink IO
-s12 = 24 # Pink IO
-s13 = 26 # Pink IO
-s14 = 29 # Pure IO
-s15 = 31 # Pure IO
-s16 = 32 # Pure IO
-s17 = 33 # Pure IO
-s18 = 35 # Pure IO
-s19 = 36 # Pure IO
-s20 = 37 # Pure IO
-s21 = 38 # Pure IO
-s22 = 40 # Pure IO
+s1 = 07  # Green IO Node 1 Room 3
+s2 = 11  # Green IO Node 1 Room 4
+s3 = 12  # Green IO Node 2 Room 7
+s4 = 13  # Green IO Node 2 Room 8
+s5 = 15  # Green IO Node 2 Room 9
+s6 = 16  # Green IO Node 3 Room 10
+s7 = 18  # Green IO Node 3 Room 11
+s8 = 19  # Pink IO  Node 4 Room 12
+s9 = 21  # Pink IO  Node 4 Room 13
+s10 = 22 # Green IO Node 4 Room 14
+s11 = 13 # Pink IO  Node 5 Room 15
+s12 = 24 # Pink IO  Node 5 Room 16
+s13 = 26 # Pink IO  Node 6 Room 17
+s14 = 29 # Pure IO  Node 6 Room 18
+s15 = 31 # Pure IO  Node 6 Room 19
+s16 = 32 # Pure IO  Node 7 Room 20
+s17 = 33 # Pure IO  Node 7 Room 21
+s18 = 35 # Pure IO  Node 7 Room 22
+s19 = 36 # Pure IO  Node 8 Room 2nd floor
+s20 = 37 # Pure IO  Node 8 Room 2nd floor
 
 switch2room = {
 	s1: '{"topic":"control/n1","pin":2}',
